@@ -1,0 +1,75 @@
+<deck>
+	<name>Programmer Humor</name>
+	<genre>Funny</genre>
+	<genre>Family-Friendly</genre>
+	<genre>STEM</genre>
+	<card type="response">
+		<content>"Yeah, I'm a Scientist."</content>
+	</card>
+	<card type="response">
+		<content>1TBS</content>
+	</card>
+	<card type="response">
+		<content>The new "best" language</content>
+	</card>
+	<card type="response">
+		<content>Asking a programmer to fix a hardware issue</content>
+	</card>
+	<card type="response">
+		<content>When the stars align and your code works against all odds</content>
+	</card>
+	<card type="response">
+		<content>Internet Explorer</content>
+	</card>
+	<card type="response">
+		<content>Confusing method overloading with overriding</content>
+	</card>
+	<card type="response">
+		<content>Subsisting on coffee and documentation</content>
+	</card>
+	<card type="response">
+		<content>Writing all of your code on one line</content>
+	</card>
+	<card type="response">
+		<content>Coding responsive GUIs</content>
+	</card>
+	<card type="response">
+		<content>Starting to count from 0</content>
+	</card>
+	<card type="response">
+		<content>Another all-nighter</content>
+	</card>
+	<card type="response">
+		<content>Segmentation Fault</content>
+	</card>
+	<card type="response">
+		<content>Copying code from Stack Overflow that works, but you don't know why.</content>
+	</card>
+	<card type="response">
+		<content>"Can you fix my computer?"</content>
+	</card>
+	<card type="response">
+		<content>Copying code from Stack Overflow that doesn't work, but you don't know why.</content>
+	</card>
+	<card type="response">
+		<content>Deleting system32</content>
+	</card>
+	<card type="response">
+		<content>GOTO statements</content>
+	</card>
+	<card type="prompt">
+		<content>The bane of my programming existence? ___.</content>
+	</card>
+	<card type="prompt">
+		<content>___ is now open source!</content>
+	</card>
+	<card type="prompt">
+		<content>The solution to your programming error: ___.</content>
+	</card>
+	<card type="prompt">
+		<content>Why won't my code compile? ___.</content>
+	</card>
+	<card type="prompt">
+		<content>I can't believe Oracle added ___ to the newest version of Java.</content>
+	</card>
+</deck>

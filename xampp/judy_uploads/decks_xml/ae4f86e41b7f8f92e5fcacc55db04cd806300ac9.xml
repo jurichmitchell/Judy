@@ -1,0 +1,41 @@
+<deck>
+	<name>Magic the Gathering Players</name>
+	<genre>Funny</genre>
+	<genre>Gaming</genre>
+	<card type="response">
+		<content>Realizing you've spent thousands of dollars on cardboard</content>
+	</card>
+	<card type="response">
+		<content>Getting mana-screwed</content>
+	</card>
+	<card type="prompt">
+		<content>Setting off an infinite combo</content>
+	</card>
+	<card type="prompt">
+		<content>R&#38;D's nightmare come true</content>
+	</card>
+	<card type="prompt">
+		<content>A black lotus</content>
+	</card>
+	<card type="prompt">
+		<content>Some crazy dinosaur creature that costs a bazillion mana</content>
+	</card>
+	<card type="prompt">
+		<content>Color fixing</content>
+	</card>
+	<card type="prompt">
+		<content>Tapping out</content>
+	</card>
+	<card type="prompt">
+		<content>A basic land</content>
+	</card>
+	<card type="prompt">
+		<content>"Whoa! I just pulled ___!"</content>
+	</card>
+	<card type="prompt">
+		<content>A late-game turn around no one expected caused by ___.</content>
+	</card>
+	<card type="prompt">
+		<content>"Alright&#8212;I just got paid. Time to buy ___."</content>
+	</card>
+</deck>

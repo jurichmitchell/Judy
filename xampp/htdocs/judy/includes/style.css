@@ -1,0 +1,399 @@
+/**************************************************************** 
+*	style.css
+*****************************************************************
+*	Mitchell Jurich
+*   Server Side Web Development - Final Project
+*   Last Edit: 4/26/18
+*****************************************************************
+
+/* COLOR DEFINITIONS */
+:root {
+	--main-bg-color: #FFC608; /* Main background color */
+	--main-fg-color: #EDA308; /* Main foreground color */
+	--secondary-fg-color: #F0B539; /* Secondary foregound color */
+	--main-ds-color: #D59207; /* Main dropshadow color */
+	--dark-puprle-contrast-color: #23003d; /* #5B0399 */
+}
+
+/* UNIVERSAL CLASSES */
+.error {
+	font-weight: bold;
+	color: var(--dark-puprle-contrast-color);
+}
+
+.button {
+	color: black;
+	font-size: 4vw;
+	font-family: "Times New Roman";
+	border: 3px solid black;
+	background-color: var(--main-fg-color);
+	padding: 5px 5px 5px 5px;
+	margin: 5px 5px 5px 5px;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: var(--secondary-fg-color);
+}
+
+/* If the screen resolution is <= 550px */
+@media all and (max-width: 550px) {
+	.button {
+		font-size: 20px;
+	}
+}
+
+/* If the screen resolution is >= 730px */
+@media all and (min-width: 730px) {
+	.button {
+		font-size: 32px;
+	}
+}
+
+.center {
+	text-align: center;
+}
+
+/* DOCUMENT STYLING */
+body {
+	background-color: var(--main-bg-color);
+}
+
+fieldset {
+	border: 3px solid black;
+	color: black;
+	font-size: 18px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+legend {
+	color: black;
+	font-size: 32px;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* HEADER STYLING */
+#header {
+	background-color: var(--main-fg-color);
+	font-size: 4vw;
+	color: black;
+	text-shadow: 2px 2px var(--main-ds--color);
+	width: 100%;
+	line-height: 5vw;
+	vertical-align: middle;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+img.headerLogo {
+	height: 4vw;
+	vertical-align: middle;
+	transform: translateY(-8%);
+}
+
+.header_profile_pic {
+	height: 3.5vw;
+	vertical-align: middle;
+	//transform: translateY(-12%);
+	border-radius: 50%;
+	padding-left: 5px;
+	transform: translateY(-12%);
+}
+
+/* If the screen resolution is <= 550px */
+@media all and (max-width: 550px) {
+	#header{
+		/* Don't let the font-size grow any smaller */
+		font-size: 20px;
+		/* Don't let the header bar grow any smaller */
+		line-height: normal;
+	}
+	
+	img.headerLogo {
+		/* Don't let the image grow any smaller */
+		height: 20px;
+		line-height: normal;
+	}
+	
+	.header_profile_pic {
+		height: 20px;
+	}
+}
+
+/* If the screen resolution is >= 730px */
+@media all and (min-width: 730px) {
+	#header{
+		/* Don't let the font-size grow any larger */
+		font-size: 32px;
+		/* Don't let the header bar grow any larger */
+		line-height: normal;
+	}
+	
+	img.headerLogo {
+		/* Don't let the image grow any larger */
+		height: 32px;
+		line-height: normal;
+	}
+	
+	.header_profile_pic {
+		height: 32px;
+	}
+}
+
+table.headerTable {
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+	// border-collapse: collapse;
+}
+					
+td.headerTable {
+	border-right: 3px solid black;
+	white-space: nowrap;
+	box-sizing: border-box; /* The width and height properties includes content, padding, and border */
+	// padding-left: 10px;
+	// padding-right: 10px;
+	padding: 0px 0px 0px 0px;
+}
+
+td.headerTable:last-child {
+	border-right: 0px;
+}
+
+#emptyCell {
+	width: 100%;
+}
+
+a.headerLink {
+	color: black;
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	text-decoration: none;
+}
+
+a.headerLink:hover {
+	background-color: var(--secondary-fg-color);
+}
+
+/* CONTENT */
+#content {
+	width: 95%;
+	-webkit-transform: translateX(2.5%); /* Center the div horizontally (2.5% + 2.5% = 5% + 95% = 100%) */
+	transform: translateX(2.5%); /* Center the div horizontally */
+	position: absolute; 
+	left: 0;
+	top: 8vw;
+}
+
+/* If the screen resolution is <= 550px */
+@media all and (max-width: 550px) {
+	#content {
+		top: 40px;
+	}
+}
+
+/* If the screen resolution is >= 730px */
+@media all and (min-width: 730px) {
+	#content {
+		top: 60px;
+	}
+}
+
+/* INDEX.php */
+div.indexLogoDiv {
+	width: 100%;
+	
+}
+
+img.indexLogo {
+	width: 75vw;
+	display: block;
+	margin-left: 9vw;
+	margin-top: 10vh;
+}
+
+/* USERPAGE STYLING */
+img.profile_pic {
+	border-radius: 50%;
+	width: 25vw;
+	height: 25vw;
+	padding: 5px 5px 5px 5px;
+}
+
+.username {
+	color: black;
+	font-size: 8vw;
+	margin: 0px 0px 0px 0px;
+	padding-left: 5px;
+}
+
+.reg_date {
+	color: black;
+	font-size: 4vw;
+	margin: 0px 0px 0px 0px;
+	padding-left: 5px;
+}
+
+.settings {
+	color: black;
+	font-size: 3vw;
+	margin: 0px 0px 0px 0px;
+	padding-left: 5px;
+}
+
+#uploadDeckFieldset {
+	text-align: center;
+}
+
+img.uploadImage {
+	width: 22px;
+	height: 22px;
+	padding-right: 5px;
+	vertical-align: middle;
+	transform: translateY(-14%);
+}
+
+/* FOLLOWING 4 CSS DEFINITIONS ADAPTED FROM */
+/* https://tympanus.net/codrops/2015/09/15/styling-customizing-file-inputs-smart-way/ */
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputfile + label {
+	color: black;
+	border: 3px solid black;
+	background-color: var(--main-fg-color);
+	cursor: pointer;
+	display: inline-block;
+}
+
+.inputfile:focus + label {
+	outline: 1px dotted #000;
+	outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+	background-color: var(--secondary-fg-color);
+}
+
+
+
+/* DECK PREVIEWS */
+fieldset.deckPreview {
+	background-color: var(--main-fg-color);
+}
+
+fieldset.deckPreview:hover {
+	background-color: var(--secondary-fg-color);
+}
+
+div.cardPreviewDiv {
+	border: 5px solid black;
+	background-color: white;
+	color: black;
+	width: 15vw;
+	height: 20vw;
+	font-size: 2vw;
+	padding: 3px 3px 3px 3px;
+}
+
+.deckName {
+	color: black;
+	font-size: 5vw;
+	margin: 0px 0px 0px 0px;
+	padding-left: 5px;
+}
+
+.deckSubText {
+	color: black;
+	font-size: 3vw;
+	margin: 0px 0px 0px 0px;
+	padding-left: 5px;
+}
+
+/* DECK */
+div.cardHoldingDiv {
+	//-webkit-column-count: 4; /* Chrome, Safari, Opera */
+    //-moz-column-count: 4; /* Firefox */
+    //column-count: 4;
+    //-webkit-column-width: 100px; /* Chrome, Safari, Opera */
+    //-moz-column-width: 100px; /* Firefox */
+    //column-width: 100px;
+	//column-fill: balance;
+	text-align: center;
+}
+
+div.fixedRatioCardPreview {
+	display: inline-block; /* Prevent div element from being cut across columns */
+	box-sizing: border-box;  /* Make the border part of te width and height of the element so it won't be cut off by columns */
+	position: relative; /* Allows the child divs to be placed absolutely relative to this div */
+	border: 5px solid black;
+	background-color: white;
+	//width:100%;
+	//padding-bottom: 130%;
+	width: 20vw;
+	padding-bottom: 25vw;
+	min-width: 150px;
+	min-height: 200px;
+	text-align: left;
+}
+
+div.cardPreviewText {
+   position:  absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   font-size: 2.5vw;
+   color: black;
+   padding: 5px 10px 5px 10px;
+}
+
+#deleteDeckButton {
+	color: black;
+	font-family: "Times New Roman";
+	border: 3px solid black;
+	background-color: var(--main-fg-color);
+	cursor: pointer;
+	font-size: 4vw;
+	padding: 5px 5px 5px 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#deleteDeckButton:hover {
+	background-color: var(--secondary-fg-color);
+}
+
+/* If the screen resolution is <= 550px */
+@media all and (max-width: 550px) {
+	#deleteDeckButton {
+		font-size: 20px;
+	}
+}
+
+/* If the screen resolution is >= 730px */
+@media all and (min-width: 730px) {
+	#deleteDeckButton {
+		font-size: 32px;
+	}
+}
+
+.ratingStars {
+	font-size: 3vw;
+}

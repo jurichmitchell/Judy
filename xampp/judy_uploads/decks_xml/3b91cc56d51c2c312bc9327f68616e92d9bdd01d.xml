@@ -1,0 +1,42 @@
+<deck>
+	<name>Artist Life</name>
+	<genre>Funny</genre>
+	<genre>Fine Art</genre>
+	<genre>College</genre>
+	<card type="response">
+		<content>Having a fellow student be your model</content>
+	</card>
+	<card type="response">
+		<content>Criticizing a 5-year-old's art—no holds barred</content>
+	</card>
+	<card type="response">
+		<content>Comic Sans</content>
+	</card>
+	<card type="response">
+		<content>Relating with Michelangelo</content>
+	</card>
+	<card type="response">
+		<content>Another 3/4 view face</content>
+	</card>
+	<card type="response">
+		<content>Art History class</content>
+	</card>
+	<card type="response">
+		<content>Screwing a piece up and thinking, "Eh, art is subjective."</content>
+	</card>
+	<card type="response">
+		<content>Sketchbook assignments</content>
+	</card>
+	<card type="response">
+		<content>Papyrus</content>
+	</card>
+	<card type="response">
+		<content>Ruining a perfect ceramic piece with glaze</content>
+	</card>
+	<card type="prompt">
+		<content>I take inspiration from ___.</content>
+	</card>
+	<card type="prompt">
+		<content>As an art major, only one thing can bring me solace: ___.</content>
+	</card>
+</deck>

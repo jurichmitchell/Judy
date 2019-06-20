@@ -1,0 +1,18 @@
+	<form method="get" action="update_deck_rating.php">
+		<fieldset class="center">
+			<legend>Rate Deck</legend>
+			<input type="hidden" name="deck_id" value="<?php echo $deck_info['deck_id']; ?>"/>
+			<input type="hidden" name="user_id" value="<?php echo $_SESSION['user_id']; ?>"/>
+			<label class="ratingStars"><input type = "radio" name="rating" value="5"
+				<?php if (isset($user_rating) && $user_rating == "5") { echo "checked=\"true\""; } ?>/>&#9733 &#9733 &#9733 &#9733 &#9733</label><br>
+			<label class="ratingStars"><input type = "radio" name="rating" value="4"
+				<?php if (isset($user_rating) && $user_rating == "4") { echo "checked=\"true\""; } ?>/>&#9733 &#9733 &#9733 &#9733 &#9734</label><br>
+			<label class="ratingStars"><input type = "radio" name="rating" value="3"
+				<?php if (isset($user_rating) && $user_rating == "3") { echo "checked=\"true\""; } ?>/>&#9733 &#9733 &#9733 &#9734 &#9734</label><br>
+			<label class="ratingStars"><input type = "radio" name="rating" value="2"
+				<?php if (isset($user_rating) && $user_rating == "2") { echo "checked=\"true\""; } ?>/>&#9733 &#9733 &#9734 &#9734 &#9734</label><br>
+			<label class="ratingStars"><input type = "radio" name="rating" value="1"
+				<?php if (isset($user_rating) && $user_rating == "1") { echo "checked=\"true\""; } ?>/>&#9733 &#9734 &#9734 &#9734 &#9734</label><br>
+			<input class="button" type="submit" name="submit" value="Submit Rating"/>
+		</fieldset>
+	</form>

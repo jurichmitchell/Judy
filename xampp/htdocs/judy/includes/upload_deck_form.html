@@ -1,0 +1,18 @@
+	<form enctype="multipart/form-data" action="user.php?username=<?php echo "$username"; ?>" method="post">
+		<input type="hidden" name="MAX_FILE_SIZE" value="524288" />
+		<fieldset id="uploadDeckFieldset">
+			<legend>Upload New Deck</legend>
+			<?php if (!empty($deck_upload_response)) {
+					foreach ($deck_upload_response as $msg) { // Print each message
+						echo "\t\t\t$msg\n";
+					}
+				}
+			?>
+			<input class="inputfile" type="file" name="upload" id="upload"/>
+			<label class="button" for="upload" id="inputFileLabel"><img class="uploadImage" src="images/upload.png"/><span>Choose file</span></label> <!-- Styled to be used as the file button -->
+			<div><input class="button" id="uploadFileButton" type="submit" name="submit" value="Upload" /></div>
+		</fieldset>
+	</form>
+	<!-- Javascript courtesy of Osvaldas Valutis of codrops -->
+	<!-- https://tympanus.net/codrops/2015/09/15/styling-customizing-file-inputs-smart-way/ -->
+	<script src="js/custom-file-input.js"></script>

@@ -1,0 +1,35 @@
+<deck>
+	<name>G4M3R</name>
+	<genre>Funny</genre>
+	<genre>Gaming</genre>
+	<card type="response">
+		<content>Collecting Steam games like Pokémon&#8482;</content>
+	</card>
+	<card type="response">
+		<content>Another re-release of Skyrim</content>
+	</card>
+	<card type="response">
+		<content>Gabe Newell</content>
+	</card>
+	<card type="response">
+		<content>Loot Boxes</content>
+	</card>
+	<card type="response">
+		<content>Small children talking smack over XBOX Live</content>
+	</card>
+	<card type="response">
+		<content>Todd Howard</content>
+	</card>
+	<card type="response">
+		<content>Sonic the Hedgehog</content>
+	</card>
+	<card type="response">
+		<content>Half Life 3</content>
+	</card>
+	<card type="prompt">
+		<content>"I just got my pre-order bonus for ___: ___."</content>
+	</card>
+	<card type="prompt">
+		<content>You can get infinite lives by entering ___ on the title screen.</content>
+	</card>
+</deck>

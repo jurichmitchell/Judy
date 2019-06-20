@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="deck">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="name" type="xs:string"/>
+				<xs:choice maxOccurs="unbounded">
+					<xs:element name="genre" type="xs:string"/>
+				</xs:choice>
+				<xs:choice maxOccurs="unbounded">
+					<xs:element name="card">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="content" type="xs:string"/>
+							</xs:sequence>
+							<xs:attribute name="type">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:enumeration value="prompt"/>
+										<xs:enumeration value="response"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:attribute>
+						</xs:complexType>
+					</xs:element>
+				</xs:choice>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

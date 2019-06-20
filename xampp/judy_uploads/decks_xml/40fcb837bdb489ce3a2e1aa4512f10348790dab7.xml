@@ -1,0 +1,51 @@
+<deck>
+	<name>Band Geeks</name>
+	<genre>Funny</genre>
+	<genre>Fine Art</genre>
+	<genre>College</genre>
+	<card type="response">
+		<content>Getting lit to "Toccata and Fugue in D minor"</content>
+	</card>
+	<card type="response">
+		<content>"One more time!"</content>
+	</card>
+	<card type="response">
+		<content>Rehearsing on asphalt</content>
+	</card>
+	<card type="response">
+		<content>Nicknaming your instrument after your crush</content>
+	</card>
+	<card type="response">
+		<content>Tchaikovsky</content>
+	</card>
+	<card type="response">
+		<content>Drawing on your sheet music</content>
+	</card>
+	<card type="response">
+		<content>"The Rite of Spring"</content>
+	</card>
+	<card type="response">
+		<content>Aural exams</content>
+	</card>
+	<card type="response">
+		<content>Bringing down The Mahler Hammer</content>
+	</card>
+	<card type="response">
+		<content>Literally writing cannon firings into your score</content>
+	</card>
+	<card type="prompt">
+		<content>Why did I become a musician? Simple. ___.</content>
+	</card>
+	<card type="prompt">
+		<content>The worst thing about band is ___.</content>
+	</card>
+	<card type="prompt">
+		<content>The best thing about band is ___.</content>
+	</card>
+	<card type="prompt">
+		<content>"Psst. I just saw the band director ___."</content>
+	</card>
+	<card type="prompt">
+		<content>The collective heart of the band sinks as soon as the director mutters ___.</content>
+	</card>
+</deck>

@@ -1,0 +1,33 @@
+	<form id="updateDeckForm" enctype="multipart/form-data" action="deck.php?deck_id=<?php echo "{$deck_info['deck_id']}"; ?>" method="post">
+		<input type="hidden" name="MAX_FILE_SIZE" value="524288" />
+		<fieldset class="center">
+			<legend>Update Deck</legend>
+			<?php if (!empty($deck_update_response)) {
+					foreach ($deck_update_response as $msg) { // Print each message
+						echo "\t\t\t$msg\n";
+					}
+				}
+			?>
+			<input class="inputfile" type="file" name="upload" id="upload"/>
+			<label class="button" for="upload" id="inputFileLabel"><img class="uploadImage" src="images/upload.png"/><span>Choose file</span></label> <!-- Styled to be used as the file button -->
+			<div><input class="button" id="uploadFileButton" type="submit" name="update_submit" value="Upload" /></div>
+			<button id="deleteDeckButton" type="button" onclick="deleteConfirmation()">Delete Deck</button>
+		</fieldset>
+	</form>
+	<!-- custom-file-input.js courtesy of Osvaldas Valutis of codrops -->
+	<!-- https://tympanus.net/codrops/2015/09/15/styling-customizing-file-inputs-smart-way/ -->
+	<script src="js/custom-file-input.js"></script>
+	<script>
+	function deleteConfirmation() {
+		var r = confirm("Are you sure you want to delete?");
+		if (r == true) {
+			var hiddenElement = document.createElement("input");
+			hiddenElement.type = "hidden";
+			hiddenElement.value = "true";
+			hiddenElement.name = "delete";
+			document.getElementById("updateDeckForm").appendChild(hiddenElement);
+			document.getElementById("updateDeckForm").submit();
+		}
+		//document.getElementById("demo").innerHTML = txt;
+	}
+	</script>

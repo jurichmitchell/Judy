@@ -1,0 +1,56 @@
+<!------------------------------------------------------------
+-	header.html
+-	
+-	Mitchell Jurich
+-   Server Side Web Development - Final Project
+-   Last Edit: 4/26/18
+-------------------------------------------------------------->
+
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title><?php echo $page_title; ?></title>
+	<link rel = "stylesheet" href = "includes/style.css">
+</head>
+
+<body>
+	<div id="header">
+		<table class="headerTable">
+			<tr>
+				<td class="headerTable"><a class="headerLink" href="index.php"/><img class="headerLogo" src="images/judy_logo.png"/></a></td>
+				<td class="headerTable"><a class="headerLink" href="search.php"/>Search</a></td>
+				<td class="headerTable" id="emptyCell"></td>
+				<!-- Register -->
+				<?php if (!isset($signedin) || !$signedin) { echo '<td class="headerTable"><a class="headerLink" href="register.php"/>Register</a></td>'; } ?>
+				<!-- Sign in | Sign out -->
+				<td class="headerTable"><a class="headerLink" href=
+					<?php if (isset($signedin) && $signedin) { echo '"signout.php"'; }
+						else { echo '"signin.php"'; } ?>/>
+					<?php if (isset($signedin) && $signedin) { echo "Sign out"; }
+						else { echo "Sign in"; } ?></a></td>
+				
+					<?php if (isset($signedin) && $signedin) {
+						echo "<td class=\"headerTable\"><a class=\"headerLink\" href=\"user.php?username={$_SESSION['username']}\"\>";
+						echo "{$_SESSION['username']}<img class=\"header_profile_pic\" src=\"";
+						// Connect to database
+						require ("mysqli_connect.php");
+						// Generate query to get user profile picture
+						$query = "SELECT profile_pic FROM deck_user WHERE user_id = '{$_SESSION['user_id']}'";
+						$results = @mysqli_query($dbc, $query);
+						$row = mysqli_fetch_array($results, MYSQLI_ASSOC);
+						if ($row['profile_pic'] != "") {
+							echo "show_image.php?sub_dir=profile_pics/&image={$row['profile_pic']}";
+						}
+						else {
+							echo "images/default_profile_pic.png";
+						}
+						echo "\"/></a></td>";
+						}
+					?>
+			</tr>
+		</table>
+	</div>
+	<div id="content">
+<?php include ("includes/site_info.php"); ?>
